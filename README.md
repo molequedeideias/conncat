@@ -7,7 +7,7 @@ Con`cat` `tx-data` on every transaction in a `conn`ection.
 Using `deps.edn`
 ```clojure
 net.molequedeideias/conncat {:git/url "https://github.com/molequedeideias/conncat.git"
-                             :sha     "..."}
+                             :sha     "95050f2d1d6ac47a371f31efa5c4e3838c1b4385"}
 ```
 
 ```clojure
