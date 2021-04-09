@@ -22,7 +22,7 @@ net.molequedeideias/conncat {:git/url "https://github.com/molequedeideias/connca
 (def conn (d/connect db-uri))
 
 (def conn-with-audit
-  (conncat/with-tx audited-conn [[:db/add "datomic.tx" :db/doc "i have audit"]]))
+  (conncat/with-tx conn [[:db/add "datomic.tx" :db/doc "i have audit"]]))
 
 ;; now you can transact data on `conn-with-audit`
 
